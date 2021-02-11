@@ -1,7 +1,7 @@
 /* Font-family for the web-page */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-html, body {
+html,body {
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Sans', sans-serif;
@@ -37,3 +37,57 @@ html, body {
 .navbar-collapse {
     text-align: center;
   }
+
+  /*Footer*/
+
+  footer {
+      background-color: rgb(40, 50, 55) ;
+      padding-top: 2rem;
+      color: white;
+      border-top: 3px solid goldenrod;
+      outline: 2px solid gold;
+      
+  }
+  
+  #footer-logo img {
+      height: 90px;
+      padding-bottom: .3rem;
+  }
+
+  #facebook i {
+      font-size: 70px;
+      color: silver;
+      padding-bottom: 1.5rem;
+  }
+
+ 
+
+  #socket {
+    border-top: 1px solid gold;
+    padding: .3rem 0;
+  }
+
+  #facebook i:focus, 
+  #facebook i:hover {
+    color: goldenrod;
+    font-weight: 500;
+}
+  /*Home Page -------------------------------------------------------------------------------------------------------------------------*/
+  
+  
+.hero {
+    background-image: url("../images/landing.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+ 
+
