@@ -6,11 +6,15 @@ html,body {
     padding: 0px;
     font-family: 'Noto Sans', sans-serif;
 }
+header {
+    margin-bottom: 2px;
+}
 
 hr {
     border-top: 3px solid goldenrod;
     width: 30%;
 }
+
 
 /*Navbar*/
 .navbar-brand img {
@@ -84,7 +88,7 @@ hr {
   
 /*Hero Section*/
 .hero {
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/heroimage_2.jpg");
     height: 90vh;
     background-attachment: fixed;
     background-position: center;
@@ -113,6 +117,21 @@ hr {
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Services page------------------------------------------------------------------------------------------------------------------------*/
+
+.bordergold {
+    border-bottom: 3px solid goldenrod;
+}
+/*remves border accordian  https://kriesi.at/support/topic/remove-border-from-accordion-element/*/
+
+.noborder{
+    border-color:transparent !important;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*Gallery page---------------------------------------------------------------------------------------------------------------------------*/
  .resizeimg {
     width: 70%;
@@ -120,6 +139,42 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Contact page-------------------------------------------------------------------------------------------------------------------------*/
+
+form {
+    
+    border: 1px solid black;
+    display: inline-block;
+    margin: 1.25rem auto;
+    margin-bottom: 2rem;
+    width: 70%;
+    margin: 1.25rem auto;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem; 
+    
+    
+}
+
+form button{
+    margin-left: 45%;
+}
+
+.form-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*About page---------------------------------------------------------------------------------------------------------------------------*/
