@@ -11,7 +11,7 @@ header {
 }
 
 hr {
-    border-top: 3px solid goldenrod;
+    border-top: 3px solid #DAA520;
     width: 30%;
 }
 
@@ -23,8 +23,8 @@ hr {
 
 .navbar {
     padding: 0 1rem;
-    border-bottom: 3px solid gold;
-    outline: 2px solid goldenrod;
+    border-bottom: 3px solid #FFD700;
+    outline: 2px solid 	#DAA520;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.8);
     
 }
@@ -35,12 +35,12 @@ hr {
 
 .navbar .navbar-nav .nav-link:focus, 
 .navbar .navbar-nav .nav-link:hover {
-    color: goldenrod;
+    color: #DAA520;
     font-weight: 500;
 }
 
 .navbar .navbar-nav .nav-item .active {
-    color: goldenrod;
+    color: #DAA520;
     font-weight: 500;
 }
 
@@ -53,9 +53,9 @@ hr {
   footer {
       background-color: rgb(40, 50, 55) ;
       padding-top: 2rem;
-      color: white;
-      border-top: 3px solid goldenrod;
-      outline: 2px solid gold;
+      color: #FFFFFF;
+      border-top: 3px solid #DAA520;
+      outline: 2px solid #FFD700;
       
   }
   
@@ -66,12 +66,12 @@ hr {
 
   #facebook i {
       font-size: 70px;
-      color: silver;
+      color: #C0C0C0;
       padding-bottom: 1.5rem;
   }
 
   #socket {
-    border-top: 1px solid gold;
+    border-top: 1px solid #FFD700;
     padding: .3rem 0;
   }
 
@@ -81,7 +81,7 @@ hr {
 
   #facebook i:focus, 
   #facebook i:hover {
-    color: goldenrod;
+    color: 	#DAA520;
     font-weight: 500;
 }
 /*Home Page -------------------------------------------------------------------------------------------------------------------------*/
@@ -103,11 +103,11 @@ hr {
 }
 
 .hero div h1 {
-    color: goldenrod;
+    color: 	#DAA520;
 }
 
 .hero div h4 {
-    color: white;
+    color: #FFFFFF;
     padding-bottom: 1rem;
 }
 
@@ -120,9 +120,9 @@ hr {
 /*Services page------------------------------------------------------------------------------------------------------------------------*/
 
 .bordergold {
-    border-bottom: 3px solid goldenrod;
+    border-bottom: 3px solid #DAA520;
 }
-/*remves border accordian  https://kriesi.at/support/topic/remove-border-from-accordion-element/*/
+/*Removes border accordian, found the solution here:  https://kriesi.at/support/topic/remove-border-from-accordion-element/ */
 
 .noborder{
     border-color:transparent !important;
@@ -139,35 +139,46 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+
+.bedroom-margin {
+    margin-bottom: 3rem;
+}
+
+.margintop {
+    margin-top: 40px;
+}
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Contact page-------------------------------------------------------------------------------------------------------------------------*/
 
 form {
     
-    border: 1px solid black;
+    border: 1px solid #D3D3D3;
     display: inline-block;
     margin: 1.25rem auto;
     margin-bottom: 2rem;
     width: 70%;
     margin: 1.25rem auto;
-    margin-bottom: 2rem;
+    margin-bottom: 100px;
     padding: 1rem 1rem; 
     
     
 }
 
-form button{
-    margin-left: 45%;
+form img {
+    width: 4%;
+    height: auto;
 }
 
-.form-container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.screwleft {
+    float: left;
 }
+.screwright {
+    float: right;
+}
+
+
 
 
 
