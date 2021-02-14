@@ -15,6 +15,12 @@ hr {
     width: 30%;
 }
 
+/*For setting padding in columns*/
+.paddingimg {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 /*Navbar*/
 .navbar-brand img {
@@ -119,14 +125,29 @@ hr {
 
 /*Services page------------------------------------------------------------------------------------------------------------------------*/
 
-.bordergold {
+.bordertopgold {
+    border-top: 3px solid #DAA520;
+}
+
+.borderbottomgold {
     border-bottom: 3px solid #DAA520;
 }
+
 /*Removes border accordian, found the solution here:  https://kriesi.at/support/topic/remove-border-from-accordion-element/ */
 
 .noborder{
-    border-color:transparent !important;
+    border-color: transparent !important;
 }
+
+.servicesfooter {
+    margin-top: 5px;
+}
+
+.marginbutton p button {
+    margin-top: 30px;
+
+}
+
 
 
 
@@ -145,7 +166,7 @@ hr {
 }
 
 .margintop {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
@@ -192,7 +213,12 @@ form img {
 
 .text-center h1 {
     margin-top: 1rem;
-
 }
+
+.text-center a button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
