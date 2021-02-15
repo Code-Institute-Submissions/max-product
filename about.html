@@ -13,16 +13,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!--Title Icon-->
-      <link rel="shortcut icon" href="assets/images/icon/max icon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="assets/images/icon/max_icon.png" type="image/x-icon">
     <title>Max Product</title>
 </head>
 <body>
-
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo/max-product logo.png" alt="Company logo."></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo/max-product_logo.png" id="logo-normal" alt="Company logo."> <img src="assets/images/logo/max-product-phone.png" id="logo-phone" alt="Company logo phone version."></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsivenavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,38 +46,37 @@
             </div>
         </nav>
     </header>
-    <body>
-        <div class="container-fluid">
-    <div class="row ">
+    
+    <!--About us-->
+    <div class="row mx-auto">
         <div class="col-md-6 paddingimg">
-            <img src="assets/images/about/about.jpg" alt="Worker with the drill (Image in black and white effect.)" class="w-100">
+            <img src="assets/images/about/about.jpg" alt="Worker with the drill (Image in black and white effect.)" class="w-100 h-100">
         </div>
         <div class="col-md-6 text-center">
             <h1>About Us</h1>
             <hr>
             <p>We are team of experienced people with extensive background in furniture business based in Zadar, Croatia. We cover all necessary aspects of your projects, which includes measuring, 3D modeling, delivery and assembling of furniture. We operate all over Croatia, so your location is not an obstacle on the way towards your dream project. If you are looking for a reliable team, we are ready to turn your idea into reality, all you have to do is contact us.
             </p>
-            <a href="contact.html"><button type="button" class="btn btn-outline-warning btn-lg">Contact Us</button></a>
+            <button type="button" class="btn btn-outline-warning btn-lg" onclick="location.href='contact.html'">Contact Us</button>
         </div>
     </div>
-</div>
-</body>
+
     <!--Footer-->
     <footer class="aboutfooter">
-        <div class="container-fluid text-center row">
+        <div class="container-fluid text-center row mx-auto">
             <div class="col-md-4 motto">
                 <a id="footer-logo" href="index.html"><img src="assets/images/footer-logo/footer-logo.png" alt="Company logo."></a>
                 <p><q><em>We assemble your dreams.</em></q></p>
             </div>
-            <div class="col-md-4">
-                <p class="contact"><i class="fas fa-phone"></i>&nbsp 555-555</p>
-                <p class="contact"><i class="fas fa-envelope"></i>&nbsp info@max-product.hr</p>
+            <div class="col-md-4 contacticon">
+                <p class="contact"><i class="fas fa-phone"></i>&nbsp; 555-555</p>
+                <p class="contact"><i class="fas fa-envelope"></i>&nbsp; info@max-product.hr</p>
             </div>
             <div id="facebook" class="col-md-4">
                 <a href=""><i class="fab fa-facebook"></i></a>
             </div>
             <div class="col-12">
-                <h5 class="text-center" id="socket">&copy Copyright 2021: Max Product</h5>
+                <h5 class="text-center" id="socket">&copy; Copyright 2021: Max Product</h5>
             </div>
 
         </div>

@@ -1,15 +1,18 @@
 /* Font-family for the web-page */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-html,body {
+html, body {
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 header {
     margin-bottom: 2px;
 }
 
+/*Frequently used*/
 hr {
     border-top: 3px solid #DAA520;
     width: 30%;
@@ -23,8 +26,14 @@ hr {
 
 
 /*Navbar*/
-.navbar-brand img {
-     height: 70px;
+
+.navbar-brand #logo-normal {
+    height: 70px;
+    display:block;
+}
+
+.navbar-brand #logo-phone {
+    display: none;
 }
 
 .navbar {
@@ -70,10 +79,25 @@ hr {
       padding-bottom: .3rem;
   }
 
+  .motto p {
+    font-size: 12px;
+}
+
+  .contacticon p i {
+
+    color: #DAA520;
+  }
+
   #facebook i {
       font-size: 70px;
       color: #C0C0C0;
       padding-bottom: 1.5rem;
+  }
+
+  #facebook i:focus, 
+  #facebook i:hover {
+    color: 	#DAA520;
+    font-weight: 500;
   }
 
   #socket {
@@ -81,15 +105,6 @@ hr {
     padding: .3rem 0;
   }
 
-.motto p {
-    font-size: 12px;
-}
-
-  #facebook i:focus, 
-  #facebook i:hover {
-    color: 	#DAA520;
-    font-weight: 500;
-}
 /*Home Page -------------------------------------------------------------------------------------------------------------------------*/
   
 /*Hero Section*/
@@ -104,10 +119,6 @@ hr {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.herocover {
-    max-width: 100%;
-}
-
 .hero div h1 {
     color: 	#DAA520;
 }
@@ -116,21 +127,10 @@ hr {
     color: #FFFFFF;
     padding-bottom: 1rem;
 }
-
-/*Our Projects Section*/
-
-
-
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*Services page------------------------------------------------------------------------------------------------------------------------*/
 
 .bordertopgold {
     border-top: 3px solid #DAA520;
-}
-
-.borderbottomgold {
-    border-bottom: 3px solid #DAA520;
 }
 
 /*Removes border accordian, found the solution here:  https://kriesi.at/support/topic/remove-border-from-accordion-element/ */
@@ -145,15 +145,11 @@ hr {
 
 .marginbutton p button {
     margin-top: 30px;
-
 }
-
-
-
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*Gallery page---------------------------------------------------------------------------------------------------------------------------*/
+/*Gallery page------------------------------------------------------------------------------------------------------------------------*/
  .resizeimg {
     width: 70%;
     height: auto;
@@ -181,14 +177,12 @@ form {
     margin-bottom: 2rem;
     width: 70%;
     margin: 1.25rem auto;
-    margin-bottom: 100px;
-    padding: 1rem 1rem; 
-    
-    
+    margin-bottom: 200px;
+    padding: 1rem 1rem;    
 }
 
 form img {
-    width: 4%;
+    width: 3%;
     height: auto;
 }
 
@@ -199,14 +193,6 @@ form img {
     float: right;
 }
 
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*About page---------------------------------------------------------------------------------------------------------------------------*/
@@ -215,10 +201,67 @@ form img {
     margin-top: 1rem;
 }
 
-.text-center a button {
+.text-center button {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
-
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Media Queries*/
+
+@media (max-width: 480px) {
+
+.navbar-brand #logo-normal {
+        display:none;
+    }
+    
+.navbar-brand #logo-phone {
+        height: 70px;
+        display: block;
+    }
+ 
+.resizeimg {
+        width: 97%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+form img {
+        width: 12%;
+        height: auto;
+    }
+
+
+
+}
+
+@media (min-width: 480px) and  (max-width: 767px) {
+
+    .resizeimg {
+        width: 95%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    form img {
+        width: 6%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .resizeimg {
+        width: 95%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    form img {
+        width: 5%;
+        height: auto;
+    }
+    
+}
